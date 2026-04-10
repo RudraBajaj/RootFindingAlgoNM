@@ -118,7 +118,7 @@ def run_app():
                     f"{step.get('b', '-'):.6f}" if isinstance(step.get('b'), (int, float)) else "-",
                     f"{step['x']:.6f}",
                     f"{step['fx']:.6f}",
-                    f"{step['error']:.2e}"
+                    f"{step['error']:.6f}"
                 ))
         else:
             # Newton, Secant, Modified Newton — no a, b columns
@@ -138,7 +138,7 @@ def run_app():
                     step["iter"],
                     f"{step['x']:.6f}",
                     f"{step['fx']:.6f}",
-                    f"{step['error']:.2e}"
+                    f"{step['error']:.6f}"
                 ))
 
     # ============================================================
